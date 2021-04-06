@@ -1,0 +1,5 @@
+html, body, #__nuxt,#__layout, main,
+html>body>#__nuxt>#__layout>div
+{
+height: 100%;
+}

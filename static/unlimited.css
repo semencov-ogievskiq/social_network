@@ -1,0 +1,49 @@
+html, body, #__nuxt,#__layout, main,
+html>body>#__nuxt>#__layout>div
+{
+height: 100%;
+}
+main{
+height: calc(100% - 2rem);
+padding: 4rem 1rem 4rem 1rem;
+}
+
+footer a, nav a{
+    color: #a1a1a1d7 !important;
+}
+footer .nuxt-link-active,
+footer a:hover,
+nav .nuxt-link-active,
+nav a:hover {
+    color: rgba(0, 0, 0, 0.9) !important;
+}
+nav {
+    display: none;
+    position: fixed;
+    width: 13rem;
+    height: 98%;
+    height: calc(100% - 3.5rem);
+    background-color: #f8f9fa !important;
+    top: 3.5rem;
+    z-index: 1031;
+}
+nav a>svg {
+    position: absolute;
+}
+nav a>span {
+    margin-left: 2rem;
+}
+
+/*footer-menu*/
+@media (min-width: 992px) {
+    footer {
+        display: none !important;
+    }
+    nav {
+        display: block;
+    }
+    main{
+        padding-left: 13.5rem;
+        padding-bottom: 1rem;
+    }
+}
